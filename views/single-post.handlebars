@@ -1,0 +1,68 @@
+<!-- Start a container for displaying a post -->
+<div class="post">
+  <!-- Start an article card for the post -->
+  <article class="card">
+    <!-- Create a card header with a title taken from the post data -->
+    <div class="card-header flex-row justify-space-between">
+      <h2>{{post.title}}</h2>
+      <!-- Display the post author and creation date -->
+      <div>
+        Posted by {{post.User.username}} on {{format_date post.createdAt}}
+      </div>
+    </div>
+    <!-- Display the post body in the card body -->
+    <div class="card-body">
+      {{post.body}}
+    </div>
+  </article>
+
+  <!-- Check if the post has comments -->
+  {{#if post.Comments}}
+    <!-- Start a card section for comments -->
+    <section class="card">
+      <!-- Create a card header for comments section -->
+      <div class="card-header">
+        <h3>Comments</h3>
+      </div>
+
+      <!-- Display comments in the card body -->
+      <div class="card-body">
+        {{#each post.Comments}}
+          <!-- Display each comment's body, author, and creation date -->
+          <div>
+            <p>
+              {{body}}
+            </p>
+            <p>
+              &mdash; {{User.username}}, {{format_date createdAt}}
+            </p>
+          </div>
+        {{/each}}
+      </div>
+    </section>
+  {{/if}}
+
+  <!-- Start a form for adding a new comment -->
+  <form id="new-comment-form" class="card">
+    <!-- Create a card header for the comment form -->
+    <div class="card-header">
+      <h3>Add New Comment</h3>
+    </div>
+
+    <!-- Create a card body for the comment form -->
+    <div class="card-body">
+      <!-- Store the post ID as a hidden input field -->
+      <input type="hidden" name="post-id" value="{{post.id}}" />
+
+      <!-- Label and input field for entering a new comment -->
+      <label class="form-label" for="comment-body">Comment</label>
+      <textarea name="comment-body" class="form-input"></textarea>
+
+      <!-- Button to submit the new comment -->
+      <button type="submit" class="btn">Submit</button>
+    </div>
+  </form>
+</div>
+
+<!-- Include a JavaScript file for handling comments -->
+<script src="/js/comment.js"></script>

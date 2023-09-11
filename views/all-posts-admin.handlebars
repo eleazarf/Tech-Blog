@@ -1,0 +1,15 @@
+<!-- Start a list of posts with the class "posts list-group" -->
+<div class="posts list-group">
+  <!-- Iterate through each post in the "posts" array -->
+  {{#each posts}}
+    <!-- Create a clickable list item with class "list-item flex-row justify-space-between" -->
+    <a class="list-item flex-row justify-space-between" href="/dashboard/edit/{{id}}">
+      <!-- Display the post title -->
+      <span>{{title}}</span>
+      <!-- Display the formatted creation date using a helper function -->
+      <span>{{format_date createdAt}}</span>
+    </a>
+  <!-- End the iteration -->
+  {{/each}}
+<!-- Close the list of posts -->
+</div>

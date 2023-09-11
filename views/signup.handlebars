@@ -1,0 +1,33 @@
+<!-- Start a sign-up card with class "card" -->
+<div class="card">
+  <!-- Create a card header with the title "Sign Up" -->
+  <div class="card-header">
+    <h2>Sign Up</h2>
+  </div>
+  <!-- Create a section for the sign-up form with the id "signup" and role "tabpanel" -->
+  <div id="signup" role="tabpanel">
+    <!-- Start a form for user sign-up with class "card-body" -->
+    <form id="signup-form" class="card-body">
+      <!-- Label and input field for specifying a username -->
+      <div>
+        <label for="username-input-signup">Username</label>
+        <input type="text" id="username-input-signup" />
+      </div>
+      <!-- Label and input field for specifying a password -->
+      <div>
+        <label for="password-input-signup">Password</label>
+        <input type="password" id="password-input-signup" />
+      </div>
+      <!-- Button to submit the sign-up form -->
+      <button type="submit" id="signup-btn" class="btn">Signup!</button>
+      <!-- Link to the login page for users who want to log in instead -->
+      <a href="/login">Login instead</a>
+    </form>
+    <!-- End the sign-up form -->
+  </div>
+  <!-- End the sign-up section -->
+</div>
+<!-- End the sign-up card -->
+
+<!-- Include a JavaScript file for handling user signup -->
+<script src="/js/signup.js"></script>

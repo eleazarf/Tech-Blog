@@ -1,0 +1,29 @@
+<!-- Start a login card with class "card" -->
+<div class="card">
+  <!-- Create a card header with the title "Login" -->
+  <div class="card-header">
+    <h2>Login</h2>
+  </div>
+  <!-- Start a form for the login process with class "card-body" -->
+  <form id="login-form" class="card-body">
+    <!-- Input field for entering a username -->
+    <div>
+      <label for="username-input-login">Username</label>
+      <input type="text" id="username-input-login" />
+    </div>
+    <!-- Input field for entering a password -->
+    <div>
+      <label for="password-input-login" class="form-label">Password</label>
+      <input type="password" id="password-input-login" />
+    </div>
+    <!-- Button to submit the login form -->
+    <button type="submit" id="login-btn" class="btn">Login!</button>
+    <!-- Link to the signup page -->
+    <a type="button" href="/signup">Sign up instead</a>
+  </form>
+  <!-- End the login form -->
+</div>
+<!-- End the login card -->
+
+<!-- Include a JavaScript file for handling the login functionality -->
+<script src="/js/login.js"></script>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Set character encoding and viewport settings -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Set the page title -->
+  <title>The Tech Blog</title>
+  <!-- Include a Google Fonts stylesheet for IBM Plex Sans font -->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <!-- Include a custom stylesheet for additional styling -->
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body class="flex-column min-100-vh">
+  <!-- Create a navigation bar -->
+  <nav class="navbar">
+    <ul>
+      <!-- Define navigation links -->
+      <li class="li-inline nav-item"><a href="/">Home</a></li>
+      <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
+      <li class="li-inline nav-item"><a href="/login">Login</a></li>
+      <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
+    </ul>
+  </nav>
+  <!-- Create a header section -->
+  <header class="hero">
+    <!-- Display the application title as a link to the home page -->
+    <h1 class="app-title"><a href="/">The Tech Blog</a></h1>
+  </header>
+
+  <!-- Create a main content area with dynamic content -->
+  <main class="col-auto">
+    {{{body}}}
+  </main>
+
+  <!-- Create a footer section -->
+  <footer class="flex-row justify-center">
+    <!-- Display a copyright notice -->
+    &copy; The Tech Blog Folks
+  </footer>
+</body>
+
+<!-- Include JavaScript file for logout functionality -->
+<script src="/js/logout.js"></script>
+
+</html>

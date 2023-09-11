@@ -1,0 +1,27 @@
+<!-- Start a section for displaying posts with the class "posts" -->
+<div class="posts">
+  <!-- Iterate through each post in the "posts" array -->
+  {{#each posts}}
+  <!-- Start an individual post article with the class "card" -->
+  <article class="card">
+    <!-- Create a card header with flexbox layout -->
+    <div class="card-header flex-row justify-space-between">
+      <!-- Display the post title as a clickable link -->
+      <h2>
+        <a href="/post/{{id}}">{{title}}</a>
+      </h2>
+      <!-- Display information about the post author and creation date -->
+      <div>
+        Posted by {{User.username}} on {{format_date createdAt}}
+      </div>
+    </div>
+    <!-- Create a card body to display the post content -->
+    <div class="card-body">
+      {{body}}
+    </div>
+  </article>
+  <!-- End the individual post article -->
+  {{/each}}
+  <!-- End the iteration through posts -->
+</div>
+<!-- Close the section for displaying posts -->

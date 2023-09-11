@@ -1,0 +1,28 @@
+<!-- Start an editable post card with class "post card" -->
+<div class="post card">
+  <!-- Create a card header with a title "Edit Post" -->
+  <div class="card-header">
+    <h2>Edit Post</h2>
+  </div>
+  <!-- Start a form for editing the post with class "card-body" -->
+  <form id="edit-post-form" class="card-body">
+    <!-- Input field to store the post's ID as hidden data -->
+    <input type="hidden" id="post-id" value="{{post.id}}" />
+
+    <!-- Label and input field for editing the post title -->
+    <label class="form-label" for="post-title">Title</label>
+    <input type="text" id="post-title" value="{{post.title}}" class="form-input" />
+
+    <!-- Label and textarea for editing the post content -->
+    <label class="form-label" for="post-body">Content</label>
+    <textarea id="post-body" class="form-input">{{post.body}}</textarea>
+
+    <!-- Button to submit the post update -->
+    <button type="submit" class="btn">Update</button>
+
+    <!-- Button to delete the post -->
+    <button type="button" id="delete-btn" class="btn">Delete</button>
+  </form>
+  <!-- End the form for editing the post -->
+</div>
+<!-- End the editable post card -->
