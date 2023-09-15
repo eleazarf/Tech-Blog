@@ -27,6 +27,6 @@ A CMS-style blog site similar to a Wordpress site, where its posible to publish 
 ![image1](./images/image1.gif)
 <br>
 
-![Video Here](https://drive.google.com/file/d/1V60HhjbbtV-m8Kgqb4tXYd_UvTJACnWM/view)
+View a [video](https://drive.google.com/file/d/1V60HhjbbtV-m8Kgqb4tXYd_UvTJACnWM/view) demonstration showcasing the fundamental features.
 <br>
 
