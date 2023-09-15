@@ -23,10 +23,10 @@ A CMS-style blog site similar to a Wordpress site, where its posible to publish 
 * When you're done, stop Nodemon by pressing CONTROL-C in the terminal and end the session.
 
 ## Screenshots
-Login and create a post <br>
-![login/post](./images/image1.gif)
+
+![image1](./images/image1.gif)
 <br>
-Update/Delete your post, or comment <br>
-![Update/delete/comment](./images/image2.gif)
+
+![Video Here](https://drive.google.com/file/d/1V60HhjbbtV-m8Kgqb4tXYd_UvTJACnWM/view)
 <br>
 
